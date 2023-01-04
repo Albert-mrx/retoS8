@@ -1,0 +1,13 @@
+article{
+  background: rgb(22, 22, 22);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: aliceblue;
+}
+p{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}

@@ -1,0 +1,17 @@
+<article>
+    <form action="">
+        <label for="">nombre</label>
+        <input type="text" #nombre>
+        <label for="">apellidos</label>
+        <input type="text">
+        <label for="">edad</label>
+        <input type="number" name="" #edad>
+        <input type="button" value="Verificar" (click)="validar(edad.value)">
+    </form>
+    <article *ngIf="valor==true; else error">
+      <p>{{nombre.value}} tienes : {{edad.value}} eres mayor de edad ✅</p>
+    </article>
+    <ng-template #error>
+      <p class="error">{{nombre.value}} tienes : {{edad.value}} eres menor edad😥</p>
+    </ng-template>
+</article>
